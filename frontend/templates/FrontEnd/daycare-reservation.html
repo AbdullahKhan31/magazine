@@ -1,0 +1,34 @@
+{% extends "mainbase.html" %}
+{% block content %}
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-sm-4">
+                <h5><i class="fa fa-book"></i>Daycare Reservation</h5>
+            </div>
+        </div>
+        <hr>
+        <br />
+        <form action="" method="post">
+            {% csrf_token %}
+            <div class="form-row">
+                <div class="form-group col-md-6">
+                    <label for="reason">Reason</label>
+                    <textarea type="text" class="form-control" name="reason" id="reason" rows="6" placeholder="Reason for booking..."></textarea>>
+                </div>
+            </div>
+            <div class="form-row">
+                <div class="form-group col-md-6">
+                    <label for="start_time">Start Time</label>
+                    <input type="datetime-local" class="form-control" id="start_time" name="start_time"></input>
+                </div>
+            </div>
+            <div class="form-row">
+                <div class="form-group col-md-6">
+                    <label for="end_time">End Time</label>
+                    <input type="datetime-local" class="form-control" id="end_time" name="end_time"></input>
+                </div>
+            </div>
+            <button type="submit" class="btn btn-primary"><i class="fa fa-plus-square"></i>Add</button>
+        </form>
+    </div>
+{% endblock %}

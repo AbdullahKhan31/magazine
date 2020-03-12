@@ -1,0 +1,47 @@
+{% extends "mainbase.html" %}
+{% block content %}
+    <div class="container-fluid">
+        <div class="col-sm-12 text-right">
+            <a href="">
+                <a href="{% url 'Chat:AddRoom' %}"><button class="btn btn-sm btn-outline-primary"><i class="fa fa-plus-circle"></i> Add Room
+                </button></a>
+            </a>
+        </div>
+        <h5>Joined Chatrooms</h5>
+        <hr/>
+        <div class="row">
+            {% for room in rooms %}
+                <div class="col-sm-3">
+                    <div class="card">
+                        <div class="card-body">
+                            <b>{{ room.name }}</b>
+                            <p style="font-size:0.9em;">{{ room.description }}</p>
+                            <div style="font-size:0.8em;">
+                                <span class="badge badge-success">0</span> Members
+                                <br/>
+                                <span style="color:grey;font-size:0.85em">{{ room.created_at }}</span>
+                            </div>
+                            <hr/>
+
+                            <a href="{% url 'Chat:OpenChatRoom' room.pk %}"><button class="btn btn-sm btn-primary">Open Room</button></a>
+
+                            <a href="{% url 'Chat:LeaveChatRoom' room.pk %}"><button class="btn btn-sm btn-danger">Leave Room</button></a>
+                        </div>
+                    </div>
+
+                </div>
+            {% endfor %}
+
+        </div>
+        <hr/>
+        <br/><br/>
+        <h5>Chatrooms</h5>
+        <hr/>
+        <div class="row">
+
+
+        </div>
+    </div>
+
+
+{% endblock %}

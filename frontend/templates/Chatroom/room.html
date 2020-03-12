@@ -1,0 +1,56 @@
+{% extends "mainbase.html" %}
+{% block content %}
+    {% csrf_token %}
+    <div class="container-fluid">
+        <h5>Room: {{ room }}</h5>
+        <hr/>
+
+        <div class="row">
+            <div class='col-sm-9'>
+                <div class="chat_box" id='chat_box' style=" border:1px solid #e9e9e9;">
+
+                    {% for chat in chats %}
+                        <div class="{% if chat.user == user %} mine {% else %}other {% endif %}">
+                            <span class="sender">{{ chat.user }} {{ chat.created_at }}</span><br/>
+                            {{ chat.message }}
+                            <input type="hidden" name="chat_id" value="{{ chat.id }}">
+                        </div>
+                        <br/><br/>
+                    {% endfor %}
+                </div>
+
+            </div>
+            <div class='col-sm-3'>
+                <ul class="list-group">
+                    <li class="list-group-item active">Online Group Members</li>
+                    <li class="list-group-item"><i class="fa fa-circle" style="color: #34ce57"></i> Syed Ashar</li>
+                    <li class="list-group-item"><i class="fa fa-circle" style="color: #34ce57"></i> Abdul Rehman</li>
+                    <li class="list-group-item"><i class="fa fa-circle" style="color: #34ce57"></i> Faysal Ahmed</li>
+                    <li class="list-group-item"><i class="fa fa-circle" style="color: #34ce57"></i> Kamlaish Jadoon</li>
+                    <li class="list-group-item"><i class="fa fa-circle" style="color: #34ce57"></i> Mamlaati Boy</li>
+                </ul>
+            </div>
+        </div>
+        <hr/>
+        <div class="row">
+            <div class='col-sm-11'>
+                <textarea style='width:100%;' id='chat_message' placeholder='Say Hello!'></textarea>
+            </div>
+            <div class='col-sm-1'>
+                <button class="btn btn-success" id="sendBtn"><i class="fa fa-send"></i> Send</button>
+            </div>
+
+        </div>
+    </div>
+
+    </div>
+
+    <script>
+
+            let user_id = {{ user.id }};
+            let room_id = {{ room.id }};
+            let user_name = '{{ user }}';
+
+
+    </script>
+{% endblock %}

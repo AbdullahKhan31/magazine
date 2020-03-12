@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Sign Up Form</title>
+    {% load static %}
+    <!-- Font Icon -->
+    <link rel="stylesheet" href="{% static 'fonts/material-icon/css/material-design-iconic-font.min.css' %}" >
+    <!-- Main css -->
+    <link rel="stylesheet" href="{% static 'css/registration-style.css' %}">
+    <style>
+        input:focus::placeholder {
+            color: #999999 !important;
+        }
+
+        input:focus::-webkit-input-placeholder {
+            color: #999999 !important;
+        }
+
+        /* Firefox < 19 */
+        input:focus:-moz-placeholder {
+            color: #999999 !important;
+        }
+
+        /* Firefox > 19 */
+        input:focus::-moz-placeholder {
+            color: #999999 !important;
+        }
+
+        /* Internet Explorer 10 */
+        input:focus:-ms-input-placeholder {
+            color: #999999 !important;
+        }
+    </style>
+</head>
+<body>
+<div class="main">
+    <section class="signup">
+        <!-- <img src="images/signup-bg.jpg" alt=""> -->
+        {% load crispy_forms_tags %}
+        <div class="container">
+            <div class="signup-content">
+                <form method="POST" action="" id="signup-form" class="signup-form">
+                    {% csrf_token %}
+                    {{ form.non_field_errors }}
+                    <h2 class="form-title">Create account</h2>
+                    <div class="form-group">
+                        {{ form.first_name|as_crispy_field }}
+                    </div>
+                    <div class="form-group">
+                        {{ form.last_name|as_crispy_field }}
+                    </div>
+                    <div class="form-group">
+                        {{ form.username|as_crispy_field }}
+                    </div>
+                    <div class="form-group">
+                        {{ form.email|as_crispy_field }}
+                    </div>
+                    <div class="form-group">
+                        {{ form.password1|as_crispy_field }}
+                        <span toggle="#id_password1" class="zmdi zmdi-eye field-icon toggle-password"></span>
+                    </div>
+                    <div class="form-group">
+                        {{ form.password2|as_crispy_field }}
+                    </div>
+                    <div class="form-group">
+                        <input type="checkbox" name="agree-term" id="agree-term" class="agree-term" required/>
+                        <label for="agree-term" class="label-agree-term"><span><span></span></span>I agree all statements in  <a href="#" class="term-service">Terms of service</a></label>
+                    </div>
+                    <div class="form-group">
+                        <input type="submit" name="submit" id="submit" class="form-submit" value="Sign up"/>
+                    </div>
+                </form>
+                <p class="loginhere">
+                    Have already an account ? <a href="{% url 'login_user' %}" class="loginhere-link">Login here</a>
+                </p>
+            </div>
+        </div>
+    </section>
+</div>
+<script src="{% static 'js/jquery-3.1.4.min.js' %}"></script>
+<script type="text/javascript">
+    (function($) {
+        $(".toggle-password").click(function() {
+            $(this).toggleClass("zmdi-eye zmdi-eye-off");
+            var input = $($(this).attr("toggle"));
+            if (input.attr("type") == "password") {
+                input.attr("type", "text");
+            } else {
+                input.attr("type", "password");
+            }
+        });
+    })(jQuery);
+</script>
+</body>
+</html>

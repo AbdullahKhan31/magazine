@@ -1,0 +1,69 @@
+{% extends "mainbase.html" %}
+{% block content %}
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-sm-4">
+                <h5>List Of Added Reservations</h5>
+            </div>
+            <div class="col-sm-8 text-right">
+                <a href="">
+                    <a href="{% url 'FrontEnd:auditorium_reservation' %}"><button class="btn btn-sm btn-outline-primary"><i class="fa fa-plus-circle"></i> Add Reservation
+                    </button></a>
+                </a>
+            </div>
+        </div>
+        <br/>
+
+        {% if list_reservation %}
+            <div class="row">
+                {% for list in list_reservation %}
+                    <div class="col-sm-4" onClick="window.location='{% url 'FrontEnd:auditorium_detail_reservation' list.id %}'">
+                        <div class="job-vacancy">
+                            <div class="row">
+                                <div class="col-sm-12">
+                                    <div class="row">
+                                        <div class="col-sm-12">
+                                            <h4>{{ list.reason }}</h4>
+                                        </div>
+                                        <div class="col-sm-12">
+                                            <p>Start Time: {{ list.start_time }}</p>
+                                        </div>
+                                        <div class="col-sm-12">
+                                            <p>End Time: {{ list.end_time }}</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                {% endfor %}
+            </div>
+        {% endif %}
+        <br/>
+        {% if list_reservation.has_other_pages %}
+                <nav aria-label="Page navigation example" style="float:right">
+                    <ul class="pagination">
+                        {% if list_reservation.has_previous %}
+                            <li class="page-item"><a class="page-link" href="?page={{ list_reservation.previous_page_number }}">&laquo;</a></li>
+                        {% else %}
+                            <li class="page-item disabled"><span class="page-link">&laquo;</span></li>
+                        {% endif %}
+                        {% for i in jobs_list.paginator.page_range %}
+                            {% if users.number == i %}
+                                <li class="page-item active"><span>{{ i }} <span class="sr-only">(current)</span></span></li>
+                            {% else %}
+                                <li class="page-item"><a class="page-link" href="?page={{ i }}">{{ i }}</a></li>
+                            {% endif %}
+                        {% endfor %}
+                        {% if jobs_list.has_next %}
+                            <li class="page-item"><a class="page-link" href="?page={{ list_reservation.next_page_number }}">&raquo;</a></li>
+                        {% else %}
+                            <li class="page-item disabled"><span class="page-link">&raquo;</span></li>
+                        {% endif %}
+                    </ul>
+                </nav>
+
+        {% endif %}
+    </div>
+    <br/><br/>
+{% endblock %}

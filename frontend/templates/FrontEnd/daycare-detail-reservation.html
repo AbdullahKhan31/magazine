@@ -1,0 +1,36 @@
+{% extends "mainbase.html" %}
+{% block content %}
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-10">
+                <h5><u>Reservation Reason:</u> {{ reservation.reason }}</h5>
+            </div>
+            <div class="col-sm-2" style="text-align: right;">
+                <a href="{% url 'FrontEnd:daycare_edit_reservation'  reservation.id %}"><button class="btn btn-primary btn-sm"><i class="fa fa-edit"></i> Edit</button></a>
+            </div>
+        </div>
+        <hr/>
+        <div class="row">
+            <div class="col-sm-12">
+                <b>Reservation Detail</b>
+                <p style="text-align: justify">
+                    {{ reservation.reason }}
+                </p>
+                <b>Start Time</b>
+                <p style="text-align: justify">
+                    {{ reservation.start_time }}
+                </p>
+                <b>End Time</b>
+                <p style="text-align: justify">
+                    {{ reservation.end_time }}
+                </p>
+                <b>Requestor</b>
+                <p style="text-align: justify">
+                    {{ reservation.requestor.username }}
+                </p>
+            </div>
+        </div>
+        <br/>
+    </div>
+    <br/><br/>
+{% endblock %}

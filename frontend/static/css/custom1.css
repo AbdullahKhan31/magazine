@@ -1,0 +1,38 @@
+/* ///////////////////////////////////// */
+
+.chat_box {
+    padding: 10px 10px 10px 0px;
+    overflow: :hidden;
+    overflow-y: scroll;
+    height:500px;
+}
+
+.other {
+    background: #4CAF50;
+    color: #fff;
+    float: left;
+    clear: both;
+    display: inline-block;
+    padding: 5px 5px 5px 15px;
+    margin-top: 5px;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+.mine {
+    text-align: right;
+    float: right;
+    clear: both;
+    display: inline-block;
+    background: #0F83F7;
+    color: #fff;
+    padding: 5px 15px 5px 5px;
+    margin-top: 5px;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+
+
+.sender {
+    font-size: 0.7em;
+}
