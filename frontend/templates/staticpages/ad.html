@@ -1,0 +1,39 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+
+    <div class="wrapper">
+        <!-- Sidebar Holder -->
+       {% include 'snippets/offsnippet.html' %}
+
+        <!-- Page Content Holder -->
+        <div id="content">
+
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                <div class="container-fluid">
+
+<h3><b>CUI Abbottabad</b></h3>
+
+
+                </div>
+            </nav>
+<h2>Administrative Structure</h2>
+    <img src="{% static 'images/o.jpg' %}" alt="structure" width="820" height="720">
+
+  </div>
+    </div>
+
+
+
+
+       <script type="text/javascript">
+        $(document).ready(function () {
+            $('#sidebarCollapse').on('click', function () {
+                $('#sidebar').toggleClass('active');
+                $(this).toggleClass('active');
+            });
+        });
+    </script>
+
+{% endblock %}
+

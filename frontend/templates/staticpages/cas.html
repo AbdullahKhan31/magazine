@@ -1,0 +1,62 @@
+{% extends 'base.html' %}
+{% block content %}
+
+    <div class="wrapper">
+        <!-- Sidebar Holder -->
+     {% include 'snippets/staticpageside.html' %}
+        <!-- Page Content Holder -->
+        <div id="content">
+
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                <div class="container-fluid">
+
+<h3><b>CUI Abbottabad</b></h3>
+
+
+                </div>
+            </nav>
+<h2>Societies at COMSATS University, Abbottabad Campus</h2>
+    <h3>Overview</h3>
+
+    <p  style="color:black;" >We at COMSATS University, Abbottabad Campus have a very strong belief that the extra curricular activities bring responsibility, character and maturity to the participating students and promote a healthy environment as well as knowledge, high moral values and positive attitudes.</p>
+<p  style="color:black;" >
+Clubs and societies are very important for the creative activities on campus. A number of clubs and societies are active at the Abbottabad campus. These societies are involved in literary, dramatic, scientific, software and photography related activities. The societies regularly organize painting/sketching competitions, debates, bait-bazi, quiz competitions, Naat and Qirat competitions, photography competition and scientific gatherings. Sports clubs are the platform for promotion of healthy activities among students.
+     </p>
+
+The Abbottabad campus has of grounds that are designed and maintained for various sports activities like cricket, football, volleyball, badminton, table tennis and athletics. Presently the following clubs and societies are actively working:</p>
+<h3>Clubs</h3>
+    <ol>
+        <li>Cricket Club</li>
+        <li>Table Tennis club</li>
+        <li>Girls sports club</li>
+        <li>Basket ball club</li>
+        <li>Volley ball club</li>
+        <li>Squash club</li>
+    </ol>
+    <h3>Societies</h3>
+    <ol>
+        <li>COMSATS Literary Society (CLS)</li>
+        <li>Aadrish Society</li>
+        <li>Performing Arts society, named "Funkada"</li>
+        <li>Adventure Club</li>
+        <li>IEEE Sub Branch of COMSATS Abbottabad</li>
+        <li>IET Society</li>
+        <li>Society of Civil Engineers</li>
+        <li>Society of Development Professionals</li>
+        <li>Biotechnology Society</li>
+        <li>DAWAA Society</li>
+    </ol>
+
+  </div>
+    </div>
+       <script type="text/javascript">
+        $(document).ready(function () {
+            $('#sidebarCollapse').on('click', function () {
+                $('#sidebar').toggleClass('active');
+                $(this).toggleClass('active');
+            });
+        });
+    </script>
+
+{% endblock %}
+

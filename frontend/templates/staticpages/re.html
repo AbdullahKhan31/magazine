@@ -1,0 +1,42 @@
+{% extends 'base.html' %}
+{% block content %}
+
+    <div class="wrapper">
+        <!-- Sidebar Holder -->
+       {% include 'snippets/contactsnip.html' %}
+
+        <!-- Page Content Holder -->
+        <div id="content">
+
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                <div class="container-fluid">
+
+<h3><b>CUI Abbottabad</b></h3>
+
+
+                </div>
+            </nav>
+    <h2>How to reach us</h2>
+    <h3>How to reach Abbottabad</h3>
+    <p  style="color:black;">The Abbottabad is located approximately 100km from Islamabad. The airport services both domestic and international flights are available to Islamabad. It takes approx. 2.5 hours to reach Abbottabad from Islamabad. From Islamabad you may choose any of the following transports to travel down to Abbottabad</p>
+   <ul>
+       <li>Daewoo Bus service service available between Islamabad and Abbottabad.</li>
+       <li>Several cab and taxi services are also available</li>
+   </ul>
+  </div>
+    </div>
+
+
+
+
+       <script type="text/javascript">
+        $(document).ready(function () {
+            $('#sidebarCollapse').on('click', function () {
+                $('#sidebar').toggleClass('active');
+                $(this).toggleClass('active');
+            });
+        });
+    </script>
+
+{% endblock %}
+

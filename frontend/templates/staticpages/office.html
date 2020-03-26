@@ -1,0 +1,50 @@
+{% extends 'base.html' %}
+{% block content %}
+
+    <div class="wrapper">
+        <!-- Sidebar Holder -->
+       {% include 'snippets/offsnippet.html' %}
+
+        <!-- Page Content Holder -->
+        <div id="content">
+
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                <div class="container-fluid">
+
+<h3><b>CUI Abbottabad</b></h3>
+
+
+                </div>
+            </nav>
+<p style="color:black;">All campuses of COMSATS University are headed by a Director. Director is administrative head of the campus. The COMSATS University, Abbottabad Campus Administration includes the following divisions</p>
+<ul type="none">
+    <a href="#" ><li>Admission Cell</li></a>
+    <a href="#"><li>Coordination Office</li></a>
+    <a href="#"><li>Director Office</li></a>
+    <a href="#"><li>Establishment</li></a>
+    <a href="#"><li>Registrar Office</li></a>
+    <a href="#"><li>Purchase Office</li></a>
+    <a href="#"><li>Student Affairs</li></a>
+    <a href="#"><li>Office of Manager Administration</li></a>
+    <a href="#"><li>Office of Development</li></a>
+    <a href="#"><li>QEC Office</li></a>
+
+    </ul>
+
+  </div>
+    </div>
+
+
+
+
+       <script type="text/javascript">
+        $(document).ready(function () {
+            $('#sidebarCollapse').on('click', function () {
+                $('#sidebar').toggleClass('active');
+                $(this).toggleClass('active');
+            });
+        });
+    </script>
+
+{% endblock %}
+

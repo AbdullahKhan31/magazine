@@ -19,4 +19,13 @@ urlpatterns = [
     path('daycare-update-reservation/<int:reservation_id>', views.daycare_update_reservation, name="daycare_update_reservation"),
     path('daycare-detail-reservation/<int:reservation_id>', views.daycare_detail_reservation, name="daycare_detail_reservation"),
 
+    # Alumni
+    path('alumni-register', views.alumni_register, name='alumni_register'),
+    path('alumni-list', views.alumni_list, name='alumni_list'),
+    path('alumni-edit/<int:reservation_id>', views.alumni_edit, name="alumni_edit"),
+    path('alumni-update/<int:reservation_id>', views.alumni_update, name="alumni_update"),
+    path('alumni-detail/<int:reservation_id>', views.alumni_detail, name="alumni_detail"),
+
+
+
 ]

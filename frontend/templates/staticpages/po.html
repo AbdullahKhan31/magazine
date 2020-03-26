@@ -1,0 +1,81 @@
+{% extends 'base.html' %}
+{% block content %}
+
+    <div class="wrapper">
+        <!-- Sidebar Holder -->
+       {% include 'snippets/offsnippet.html' %}
+
+        <!-- Page Content Holder -->
+        <div id="content">
+
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                <div class="container-fluid">
+
+<h3><b>CUI Abbottabad</b></h3>
+
+
+                </div>
+            </nav>
+  <h2>Provost Office</h2>
+    <h3>The Provost</h3>
+    <p  style="color:black;">The functions of the Provost are to</p>
+    <ul>
+        <li>promote the success of students at CIIT by providing enrichment programs, counseling, guidance, orientation, and support.</li>
+        <li>More specifically, he looks after the affairs of the student's hostels (male and female).</li>
+        <li>He also deals with students behavior issues and acts of indiscipline.</li>
+<li>Promotes parent-teacher relationship, and supervises students activites.</li>
+    </ul>
+    <br>
+    <hr>
+<h2>Boys Hostel's Staff</h2>
+    Qazi Najam-us-Saqib<br>
+Provost ( Girls and Boys Hostel )<br>
+Email: najam48@ciit.net.pk<br>
+Telephone Number: +92-992-383591<br>
+Fax: +92-992-383441 <br>
+    <hr>
+    <h2>Girls Hostel's Staff</h2>
+Dr. Romana Khan<br>
+Senior Warden ( Girls Hostel ) <br>
+Email: romanakhan@ciit.net.pk <br>
+Tel: +92-992-383591-5 <br>
+Fax : +92-992-383441 <br>
+   <h2>Girl's hostel facilities</h2>
+    <ul>
+        <li>The rooms can accommodate three occupants.</li>
+        <li>Every room has three study tables, and three beds, along with a one large closet</li>
+        <li>Prepared/cooked food at mess is provided inside the hostel three times a day.</li>
+          <li>Laundry facility provided inside</li>
+        <li>Paid Wi-Fi facility available</li>
+        <li>A Lady warden stays 24 hours in the hostel for supervision</li>
+          <li>Girl’s hostel has an independent gate at the entrance of the building.</li>
+        <li>Female boarding blocks are surrounded with barbed wire for security and are provided an independent and free environment.</li>
+        <li>Ladies gym is provided inside the facility.</li>
+    </ul>
+    <h2>Salman Firdaus hostel facilities</h2>
+      <ul>
+        <li>The rooms can accommodate three occupants.</li>
+        <li>Every room has three study tables, and three beds, along with a one large closet</li>
+        <li>Two mess options are available from 7:00 am to 10:00 pm daily</li>
+          <li>Paid Laundry services are available weekly</li>
+        <li>Paid Wi-Fi facility available</li>
+
+        <li>Gym is provided inside the facility.</li>
+    </ul>
+  </div>
+    </div>
+
+
+
+
+       <script type="text/javascript">
+        $(document).ready(function () {
+            $('#sidebarCollapse').on('click', function () {
+                $('#sidebar').toggleClass('active');
+                $(this).toggleClass('active');
+            });
+        });
+    </script>
+
+{% endblock %}
+

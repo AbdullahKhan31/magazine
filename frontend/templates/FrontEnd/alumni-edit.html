@@ -1,0 +1,76 @@
+{% extends "mainbase.html" %}
+{% block content %}
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-sm-4">
+                <h5><i class="fa fa-book"></i>Edit Alumni</h5>
+            </div>
+        </div>
+        <hr>
+        <br />
+        <form action="{% url 'FrontEnd:alumni_update' reservation.id %}" method="post">
+            {% csrf_token %}
+            <div class="form-row">
+                <div class="form-group col-md-6">
+                    <label for="name">Name</label>
+                    <input type="text" class="form-control" name="name" id="name">
+                </div>
+            </div>
+            <div class="form-row">
+                <div class="form-group col-md-6">
+                    <label for="email">Email</label>
+                    <input type="email" class="form-control" id="email" name="email">
+                </div>
+            </div>
+            <div class="form-row">
+                <div class="form-group col-md-6">
+                    <label for="phone">Mobile/Phone</label>
+                    <input type="number" class="form-control" id="phone" name="phone">
+                </div>
+            </div>
+            <div class="form-row">
+                <div class="form-group col-md-6">
+                    <label for="year_of_passing">Year of Passing</label>
+                    <input type="number" class="form-control" id="year_of_passing" name="year_of_passing">
+                </div>
+            </div>
+            <div class="form-row">
+                <div class="form-group col-md-6">
+                    <label for="date_of_birth">Date of Birth</label>
+                    <input type="date" class="form-control" id="date_of_birth" name="date_of_birth">
+                </div>
+            </div>
+            <div class="form-row">
+                <div class="form-group col-md-6">
+                    <label for="martial_status">Martial Status</label>
+                    <input type="text" class="form-control" id="martial_status" name="martial_status">
+                </div>
+            </div>
+            <div class="form-row">
+                <div class="form-group col-md-6">
+                    <label for="profession">Profession</label>
+                    <input type="text" class="form-control" id="profession" name="profession">
+                </div>
+            </div>
+            <div class="form-row">
+                <div class="form-group col-md-6">
+                    <label for="address">Address</label>
+                    <textarea type="text" class="form-control" id="address" name="address" rows="4"></textarea>
+                </div>
+            </div>
+            <div class="form-row">
+                <div class="form-group col-md-6">
+                    <label for="graduation">Where did life take you after Graduation?</label>
+                    <textarea type="text" class="form-control" id="graduation" name="graduation" rows="4"></textarea>
+                </div>
+            </div>
+            <div class="form-row">
+                <div class="form-group col-md-6">
+                    <label for="graduation1">Fondest memories of life @Graduation</label>
+                    <textarea type="text" class="form-control" id="graduation1" name="graduation" rows="4"></textarea>
+                </div>
+            </div>
+            <button type="submit" class="btn btn-primary"><i class="fa fa-plus-square"></i>Update Reservation</button>
+        </form>
+    </div>
+{% endblock %}

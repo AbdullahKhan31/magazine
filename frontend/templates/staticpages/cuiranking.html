@@ -1,0 +1,54 @@
+{% extends 'base.html' %}
+{% block content %}
+
+    <div class="wrapper">
+        <!-- Sidebar Holder -->
+       {% include 'snippets/aboutstaticside.html' %}
+
+        <!-- Page Content Holder -->
+        <div id="content">
+
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                <div class="container-fluid">
+
+<h3><b>CUI Abbottabad</b></h3>
+
+
+                </div>
+            </nav>
+
+           <h4><b>CUI Ranking</b></h4>
+            <p style="color:black;">
+
+            Establishment of an IT Institution in Abbottabad was a visionary challenge of Dr. Atta-ur-Rehman, Minister of Science and Technology of the time. COMSATS came forward to accept this challenge as an opportunity, which was converted in to reality by the Founding Director of the campus, Dr. Haroon Rashid. Pakistan Army did the greatest service to the cause of education by offering 308 kanals of land at Tobe camp for establishing an IT Institute, which was graciously transferred by Pakistan Military and gratefully accepted by COMSATS University Islamabad.
+            </p>
+
+            <p style="color:black;">In a record period of 90 days, the dynamic leadership and untiring efforts of Dr Haroon Rashid, managed to convert the dilapidated barracks and over grown jungle into a vibrant seat of learning and on 3 September 2001, COMSATS University Islamabad, Abbottabad Campus opened its doors to the knowledge thirsty youth of Hazara and northern areas of Pakistan. Three undergraduate programs of Information Technology, Computer Science and Electrical Engineering were started with an initial intake of 121 students.</p>
+
+            <p style="color:black;">The tranquil atmosphere of the area, and the dedication of the faculty and staff of the campus, was the engine which gave impetus to the phenomenal growth in the academic offerings to the students. Today Abbottabad campus has 11 departments, more than 5500 students, 17 undergraduate programs, qualified faculty strength of 570 including more than 200 PhDs, and 85 state of the art laboratories. Its physical infrastructure emulates the best educational institutions of the country. The natural climatic advantages of Abbottabad city, large land area, sports and recreation facilities and above all, a secure and friendly environment, have all combined to make the Abbottabad campus more of a resort. The campus is an ideal place to study, live and work. The campus area also encompasses parks, orchards and grounds, the lush green grounds, blooming flowerbeds and trees. Set in these environs, with a panoramic background view of Thandiani and Galiat mountains, makes COMSATS University Islamabad, Abbottabad Campus campus a perfect place to study with complete peace of mind. </p>
+
+            <p style="display:none;">Since its inception, COMSATS University Islamabad, Abbottabad Campus has produced 7,348 graduates. So far, 15 convocations have been organized.</p>
+
+            <p>COMSATS University Islamabad, Abbottabad Campus lives true to the Motto <b>'We Aim to Inspire'</b></p>
+
+            <hr />
+            <br />
+
+            </p>
+  </div>
+    </div>
+
+
+
+
+       <script type="text/javascript">
+        $(document).ready(function () {
+            $('#sidebarCollapse').on('click', function () {
+                $('#sidebar').toggleClass('active');
+                $(this).toggleClass('active');
+            });
+        });
+    </script>
+
+{% endblock %}
+

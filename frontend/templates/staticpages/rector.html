@@ -1,0 +1,72 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+
+    <div class="wrapper">
+        <!-- Sidebar Holder -->
+       {% include 'snippets/aboutstaticside.html' %}
+
+        <!-- Page Content Holder -->
+        <div id="content">
+
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                <div class="container-fluid">
+
+<h3><b>CUI Abbottabad</b></h3>
+
+
+                </div>
+            </nav>
+
+           <h4><b>Rector’s Message</b></h4>
+              <p style="text-align:justify;">
+                <span style="float: left; padding-right: 10px;">
+                    <img src="{% static 'images/rector.jpg' %}" alt="Rector image" /><br />
+                    <a class="more_button" href="#"><b>The Rector COMSATS University Islamabad</b>
+                        <br />
+                        <b>Prof. Dr Raheel Qamar T.I.</b>
+            </a></span>COMSATS University Islamabad is a name well recognized among the Higher Education Institutions of the country and I am proud to share with you that it has become the prime choice for higher studies. During the past fourteen years, COMSATS University Islamabad has developed into one of the largest multidisciplinary universities and the leader of change in the education scenario. COMSATS University Islamabad chartered in 2000, started with a single lecture room, meager resources, offering a few certificate courses and a postgraduate diploma in Computer Studies. With the visionary leadership and dedicated team, today it stands at an enviable position, with a choice of seven fully functional campuses along with its virtual campus, 06 Faculties, 18 Departments and around 100 degree programs to its prospective students. In contemporary times, the transformation in the world economy is perennial; technologies evolve at neck breaking speeds. These are extra ordinary times requiring extra ordinary preparations and efforts. Students and parents alike acknowledge the changing trends and are eagerly seeking out institutions of higher learning where their thirst, curiosity and drive for knowledge are adequately convinced; where all round personality development takes place holistically, abreast with knowledge and managerial skills and the drive to lead and succeed; where they can take charge of their future with an open mind while exploring their chosen fields.
+            </p>
+            <p style="text-align:justify;">
+                Since its establishment in 2000 as a Degree Awarding Institute, COMSATS University Islamabad has always been at the forefront of innovation and has played proactive role in shaping the modern day higher education scene in Pakistan. It has more than 35,450 full time students studying in a wide range of undergraduate and graduate degree programs. By offering a broad range of disciplines, COMSATS University Islamabad encompasses issues that are of real interest to professionals, prospective employers and to you as students. Our institution has 2,887 faculty members actively involved in academic and research activities. COMSATS University Islamabad is one of the few institutions to have highly qualified foreign faculty, and every faculty member is doing the cutting edge research in their respective disciplines. Their expertise is reflected in our teaching and has made this institution a credible center of excellence both in quality teaching and research, and their extension for the benefit of society at large through product development and services. Since 2006, COMSATS University Islamabad has consistently earned the singular honour of being ranked among top 10 institutions of higher education in the country on account of research output by its qualified faculty. Besides, COMSATS University Islamabad has also been ranked at No. 1 in the Computer Science and IT category by HEC in 2012. This success is a manifestation of its undeterred commitment and has led to an unprecedented number of applicants for securing admission in COMSATS University Islamabad every year. Moreover, an international ranking agency, QS Organization, which carries out world universities ranking, awarded three stars (out of a total of five) to COMSATS University Islamabad. The award was announced during a QS conference held in Seoul, South Korea in 2013. Another joyous moment for COMSATS University Islamabad was when it attained position in QS Asian University Rankings 2014 for the first time. It was placed in 201-250 range of top Asian Universities. Higher Education Commission of Pakistan is has been consistently placing CUI among the top 10 best universities of the country, out of a pool of close of 190 universities. Internationally, Times Higher Education (THE) of London in its most updated rankings has placed CUI among world’s top 341-400 universities; and in the Life Sciences and Physical Sciences domains among the top 401-500 pool of universities. CUI’s track record of its faculty research publications in the internationally abstracted journals has also been phenomenal given its brief history. With the modest beginning of just 172 research publications in 2005 to 2000 publications in year 2017.
+            </p>
+            <p style="text-align:justify">
+                I personally extend to you an invitation to come, visit us at any of our seven campuses, and experience the difference that opens your minds and unleashes your hidden talents and energies. Be a part of the best to bring out the best. Needless to say, the future and destiny of Pakistan is its bright and energetic youth. Nothing less than an educated and skilled citizenry is a sine qua non of a modern, tolerant, pluralistic and developed Pakistan
+            </p>
+            <p style="text-align:justify;">We look forward to welcome you, and invite you to share our fervor of quality education.</p>
+
+
+            <span style="float:right"><b>With continued wishes of success,</b><br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Prof. Dr Raheel Qamar T.I.</span>
+
+
+            <br />
+            <br />
+            <br />
+
+            <hr />
+
+
+
+            <p style="color:black;">
+
+
+
+
+            </p>
+  </div>
+    </div>
+
+
+
+
+       <script type="text/javascript">
+        $(document).ready(function () {
+            $('#sidebarCollapse').on('click', function () {
+                $('#sidebar').toggleClass('active');
+                $(this).toggleClass('active');
+            });
+        });
+    </script>
+
+{% endblock %}
+

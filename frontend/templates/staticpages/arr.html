@@ -1,0 +1,59 @@
+{% extends 'base.html' %}
+{% block content %}
+
+    <div class="wrapper">
+        <!-- Sidebar Holder -->
+ {% include 'snippets/staticpageside.html' %}
+
+        <!-- Page Content Holder -->
+        <div id="content">
+
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                <div class="container-fluid">
+
+<h3><b>CUI Abbottabad</b></h3>
+
+
+                </div>
+            </nav>
+
+          <h2>Academic Regulations</h2>
+   <h3>Admission Criteria</h3>
+    <p  style="color:black;">All admissions shall be regulated on the basis of merit determined by combining the weighted marks obtained in the entrance test with
+        <br> the weighted marks earned in the previous public examinations, as well as suitability and aptitude for a particular degree program
+        <br> determined through Interview</p>
+    <h2>Admission</h2>
+<ul>
+    <li>Upon the display of merit list of the successful candidates, they shall be required to confirm their willingness to enroll by depositing the prescribed fees and charges into the relevant account of the campus. Admission shall only be considered complete if the registration form along with payment of all dues within specified dates is confirmed to the campus registration office.</li>
+    <li>If an applicant fails to confirm his/her enrollment within the notified period, his/her admission shall be cancelled forthwith and the seat shall be offered to the next candidate on the waiting list.</li>
+<li>Admission to one degree program shall not give the candidate an automatic right to transfer to another program, unless specifically allowed with the mutual consent of the two concerned departments on case to case basis, and after approval by the relevant authority.
+    </li>
+    <li>Admission into an academic program may be refused to a candidate for reasons to be recorded </li></ul>
+<h2> Registration of Courses</h2>
+    <ul>
+
+<li>At the beginning of each semester, students shall be required to register for a group of courses prescribed for a particular degree program and for a particular semester.</li>
+        <li>Students may register for additional non-credit courses, on successful completion of which a mention shall be made in the transcript, but shall not be used for computation of CGPA.</li>
+        <li>The Chairmen/Heads of Departments shall forward within seven teaching days from the date of the commencement of a semester all the registration forms to the examination section of the campus.</li>
+        <li>A student may change course(s) within five teaching days from the date of commencement of a semester on the recommendations of the teacher(s) concerned. However, course(s) may be dropped immediately after the first sessional test result is known. In that case, no academic penalty will accrue. However, fees paid will not be adjusted.</li>
+<li>In order to remain a full-time student of the Institute, a student must be registered in at least 12 credit hours of course work during a semester.
+        <li>The maximum credit hours of course work for which a student can register during a semester, shall not exceed 21.</li>
+</ul>
+
+  </div>
+    </div>
+
+
+
+
+       <script type="text/javascript">
+        $(document).ready(function () {
+            $('#sidebarCollapse').on('click', function () {
+                $('#sidebar').toggleClass('active');
+                $(this).toggleClass('active');
+            });
+        });
+    </script>
+
+{% endblock %}
+

@@ -1,0 +1,75 @@
+{% extends 'base.html' %}
+{% block content %}
+
+    <div class="wrapper">
+        <!-- Sidebar Holder -->
+       {% include 'snippets/offsnippet.html' %}
+
+        <!-- Page Content Holder -->
+        <div id="content">
+
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                <div class="container-fluid">
+
+<h3><b>CUI Abbottabad</b></h3>
+
+
+                </div>
+            </nav>
+ <h2>Medical Centre</h2>
+    <h3>Primary Health Care Centre</h3>
+    <p style="color:black;">CIIT Abbottabad houses a fully equipped Medical Centre that has its own Medical Store and a qualified doctor to provide immediatemedical care in case of any on-campus emergency. Also Ayub Teaching Hospital, which is a fully equipped Hospital, is two minutes drive from our campus.</p>
+    <p style="color:black;">The present strength of the center is as under:</p>
+    <ul>
+        <li>SMO ( Senior Medical Officer)</li>
+        <li>Dispenser</li>
+        <li>Peon</li>
+    </ul>
+    <h2>Duties of SMO</h2>
+    <ul>
+        <li>Provision of First Aid.</li>
+        <li>To provide Primary Health Care services to all</li>
+        <li>To promote Health education.</li>
+        <li>Counseling & psychological assistance of students.</li>
+        <li>Awareness about the preventive measures relating to common Seasonal and deadly diseases by arranging seminars and Vaccination Camps.</li>
+        <li>Curative and Diagnostic services.</li>
+        <li>Medical cover during seminars, conferences, Convocations and every event of COMSATS.</li>
+        <li>Verification of Medical cases</li>
+        <li>Minor Emergencies are entertained.</li>
+        <li>Serious emergencies are referred to Ayub Teaching Hospital and CMH Abbottabad.</li>
+        <li>Referral Services and Liaison with CMH ATD.</li>
+        <li>Preparation of monthly report</li>
+    </ul>
+<h2>Duties of Dispenser</h2>
+      <ul>
+        <li>Facilitate SMO in providing First aid.</li>
+        <li>Facilitate SMO in emergencies.</li>
+        <li>Receiving patients.</li>
+        <li>Daily and Monthly record keeping of medicines.</li>
+        <li>Daily and Monthly record keeping of medicines.</li>
+        <li>Curative and Diagnostic services.</li>
+        <li>Performing duties in every events and sports.</li>
+        <li>Verification of Medical cases</li>
+        <li>Minor Emergencies are entertained.</li>
+        <li>Serious emergencies are referred to Ayub Teaching Hospital and CMH Abbottabad.</li>
+        <li>Referral Services and Liaison with CMH ATD.</li>
+        <li>Preparation of monthly report</li>
+    </ul>
+    <br>
+  </div>
+    </div>
+
+
+
+
+       <script type="text/javascript">
+        $(document).ready(function () {
+            $('#sidebarCollapse').on('click', function () {
+                $('#sidebar').toggleClass('active');
+                $(this).toggleClass('active');
+            });
+        });
+    </script>
+
+{% endblock %}
+

@@ -1,0 +1,58 @@
+{% extends 'base.html' %}
+{% block content %}
+
+    <div class="wrapper">
+        <!-- Sidebar Holder -->
+       {% include 'snippets/contactsnip.html' %}
+
+        <!-- Page Content Holder -->
+        <div id="content">
+
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                <div class="container-fluid">
+
+<h3><b>CUI Abbottabad</b></h3>
+
+
+                </div>
+            </nav>
+    <h2>Contacts</h2>
+<h3>COMSATS University Islamabad, Abbottabad Campus</h3>
+    University Road, Tobe Camp Postal Code 22060 Abbottabad <br>
+Tel: 0992-383591-6 <br>
+Fax: 0992 - 383441 <br>
+Web: http://www.cuiatd.edu.pk <br>
+    <h2>For Admissions</h2>
+Admission Cell, COMSATS University Islamabad, Abbottabad Campus <br>
+E-Mail: admissions@cuiatd.edu.pk <br>
+    <h2>For general information</h2>
+COMSATS University Islamabad, Abbottabad Campus <br>
+E-Mail: info@cuiatd.edu.pk <br>
+
+    <h2>For any suggestions or complaints:</h2>
+Address: COMSATS University Islamabad, Abbottabad Campus <br>
+E-Mail: CSR@cuiatd.edu.pk <br>
+
+    <h2> For Student Affairs:</h2>
+Address: COMSATS University Islamabad, Abbottabad Campus <br>
+E-Mail: studentaffairs@cuiatd.edu.pk <br>
+Cell: 0346-6111189 <br>
+Phone: 0992-383596 <br>
+
+  </div>
+    </div>
+
+
+
+
+       <script type="text/javascript">
+        $(document).ready(function () {
+            $('#sidebarCollapse').on('click', function () {
+                $('#sidebar').toggleClass('active');
+                $(this).toggleClass('active');
+            });
+        });
+    </script>
+
+{% endblock %}
+

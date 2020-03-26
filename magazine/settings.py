@@ -46,6 +46,7 @@ INSTALLED_APPS = [
     'daycare',
     'user_management',
     'chat',
+    'alumni',
 
     # Django Apps
     'django.contrib.admin',

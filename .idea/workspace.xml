@@ -2,12 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="32f320ed-d05a-480a-8b2e-c14f97f8883e" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/magazine.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/templates/FrontEnd/auditorium-reservation.html" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/templates/FrontEnd/auditorium-reservation.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/templates/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/templates/base.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/templates/layout/header.html" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/templates/layout/header.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/templates/mainbase.html" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/templates/mainbase.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/views.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/magazine/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/magazine/settings.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/magazine/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/magazine/urls.py" afterDir="false" />
     </list>
@@ -20,8 +21,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="HTML File" />
         <option value="Python Script" />
+        <option value="HTML File" />
       </list>
     </option>
   </component>
@@ -34,15 +35,15 @@
   </component>
   <component name="PropertiesComponent">
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/frontend/static/images" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="D:\FYP\Django\magazine\frontend\static\images" />
       <recent name="D:\FYP\Django\magazine\frontend\static\css" />
+      <recent name="D:\FYP\Django\magazine\frontend\templates" />
       <recent name="D:\FYP\Django\magazine\frontend\static" />
       <recent name="D:\FYP\Django\magazine\frontend\static\js" />
-      <recent name="D:\FYP\Django\magazine\frontend\templates\layout" />
     </key>
   </component>
   <component name="RunDashboard">

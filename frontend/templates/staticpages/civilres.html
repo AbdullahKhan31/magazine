@@ -1,0 +1,60 @@
+{% extends 'base.html' %}
+{% block content %}
+
+    <div class="wrapper">
+        <!-- Sidebar Holder -->
+       {% include 'snippets/researchsnip.html' %}
+
+        <!-- Page Content Holder -->
+        <div id="content">
+
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                <div class="container-fluid">
+
+<h3><b>CUI Abbottabad</b></h3>
+
+
+                </div>
+            </nav>
+
+           <h4><b>Civil Engineering</b></h4>
+            <p style="color:black;">
+
+<b>Environmental, Water and Geomatics Engineering</b> <br>
+Water is life, especially in a developing country like Pakistan, water is a fuel to agriculture based economy. Optimal use water resources will not only ensure economy prosperity but will also protect against floods which may cause enormous losses in terms of life and economy.
+               <BR> Water Resources Engineering Research group is working for the betterment of water resources in developing countries and also engaged in other international research activities abroad on demand basis routine.
+                <br>
+
+<b>Focus Areas</b> <br>
+Flood Management, Water Harvesting, Surface Hydrology, Risk-based Design of water structures
+ <h3><b>Group Members:</b></h3>
+          •   DR. MUHAMMAD ASHRAF TANOLI <br>
+•  DR. MUHAMMAD ATIQ UR REHMAN TARIQ <br>
+•  DR. KHAN ZAIB JADOON <br>
+•  KAMRAN HAIDER SYED <br>
+•  DR. TAHIR ALI AKBAR <br>
+•  TAYYAB ASHFAQ <br>
+•  SABA KHAN <br>
+
+
+
+
+
+            </p>
+  </div>
+    </div>
+
+
+
+
+       <script type="text/javascript">
+        $(document).ready(function () {
+            $('#sidebarCollapse').on('click', function () {
+                $('#sidebar').toggleClass('active');
+                $(this).toggleClass('active');
+            });
+        });
+    </script>
+
+{% endblock %}
+
