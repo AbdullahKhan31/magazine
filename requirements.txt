@@ -14,7 +14,7 @@ django-crispy-forms==1.8.0
 django-phonenumber-field==4.0.0
 django-rest-auth==0.9.5
 django-rest-swagger==2.2.0
-djangorestframework==3.10.3
+djangorestframework==3.11.2
 filelock==3.0.12
 idna==2.9
 itypes==1.1.0
